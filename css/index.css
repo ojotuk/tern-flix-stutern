@@ -19,6 +19,9 @@ html,body{
 nav{
     /* padding: 10px 0; */
 }
+.navbar-toggler-icon{
+color:#fff !important
+}
 .brand{
     display: flex;
     flex-direction: column;
@@ -89,6 +92,32 @@ nav .navbar-nav .nav-item a{
     color: #f3f3f3;
     transition: .3s;
     font-size: 14px;
+}
+
+.get-started{
+    padding: 50px 0;
+}
+.get-started:hover  h3::after{
+    height: 2px;
+    width: 100%;
+}
+.get-started h3{
+    font-family: 'Syne Mono', monospace;
+    color: #fff;
+    text-shadow: 0 2px 4px crimson;
+    position: relative;
+    width: fit-content;
+}
+.get-started h3::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    border-left: 2px solid crimson;
+    border-bottom: 2px solid crimson;
+    position: absolute;
+    left: -10px;
+    bottom: 0px;
+    transition: .5s;
 }
 .category-card{
     color: #fff;
