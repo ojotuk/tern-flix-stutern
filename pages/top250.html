@@ -33,7 +33,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon text-light"><i class="bi bi-distribute-vertical"></i></span>
+          <span class="navbar-toggler-icon text-light"
+            ><i class="bi bi-distribute-vertical"></i
+          ></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbar-tern-flix">
@@ -53,7 +55,9 @@
               <a class="nav-link" href="#">Coming Soon</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/mycollections.html">My Collections</a>
+              <a class="nav-link" href="/pages/mycollections.html"
+                >My Collections</a
+              >
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -73,62 +77,26 @@
     <main class="home-main">
       <section class="hero-home">
         <div class="content container">
-          <h1 class="title">Movies Starts Here...</h1>
-          <div class="row cores">
-            <div class="col-lg-4 col-md-6 core-item">
-              <h4>Catch the Thrill</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                pariatur quis aperiam eligendi nihil architecto quod temporibus?
-                Ex, vero officiis?
-              </p>
-            </div>
-            <div class="col-lg-4 col-md-6 core-item">
-              <h4>Live the Moment</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                pariatur quis aperiam eligendi nihil architecto quod temporibus?
-                Ex, vero officiis?
-              </p>
-            </div>
-            <div class="col-lg-4 col-md-6 core-item">
-              <h4>Premium Entertainment</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                pariatur quis aperiam eligendi nihil architecto quod temporibus?
-                Ex, vero officiis?
-              </p>
-            </div>
-          </div>
+          <h1 class="title">Top 250 Movies...</h1>
+          <div class="row cores"></div>
           <div class="get-started">
-              <h3>Get Started</h3>
-              <div class="row">
-                  <a class="col-lg-3 col-md-4  category-card">
-                      <div class="mb-2">Browse Top 100 Movies</div>
-                      <img src="/asset/top movies.jpg"/>
-                    </a>
-                  <a class="col-lg-3 col-md-4 category-card">
-                      <div class="mb-2">Browse Popular Movies</div>
-                      <img src="/asset/latest.jpeg"/>
-                    </a>
-                  <a class="col-lg-3 col-md-4 category-card">
-                      <div class="mb-2">Browse Latest Movies</div>
-                      <img src="/asset/popular.jpg"/>
-                    </a>
-                  <a class="col-lg-3 col-md-4 category-card">
-                      <div class="mb-2">My Movies</div>
-                      <img src="/asset/coming.jpg"/>
-                    </a>
-              </div>
+            <h3>Get Started</h3>
+            <div class="row" id="top-container">
+            
+            </div>
+            <div>
+            <button class='btn btn-danger' id='prev-btn'>Previous</button>
+            <button class='btn btn-danger ml-auto' id='next-btn'>Next</button>
+            </div>
           </div>
         </div>
       </section>
       <footer>
-          <div class="container">
-            <div class="footer-content">
-                <div>A Fictitious Project</div>
-            </div>
+        <div class="container">
+          <div class="footer-content">
+            <div>A Fictitious Project</div>
           </div>
+        </div>
       </footer>
     </main>
     <script
@@ -146,6 +114,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <script src="/js/top.js"></script>
   </body>
 </html>

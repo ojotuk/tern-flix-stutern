@@ -6,8 +6,7 @@ const getMovie =()=>{
         redirect: 'follow'
       };
        
-      fetch('https://imdb-api.com/en/API/Top250Movies/k_44sig65s', requestOptions)
-        .then(response => response.json())
+      axios.get('https://imdb-api.com/en/API/Top250Movies/k_44sig65s', requestOptions)
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
 }
